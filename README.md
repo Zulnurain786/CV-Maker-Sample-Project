@@ -1,5 +1,8 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Project Details 
+This Project is made for German Client in this Project we have modules like any one can login or Create their profile and Create form if any one want to buy a house on rent thay can genrate PDF and downloud and add profile of their members but this is uncomplete because client want to change it completey so we make new project for client.
+
 ## Getting Started
 
 First, run the development server:
