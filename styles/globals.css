@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+details summary::-webkit-details-marker {
+    display: none;
+}
+details[open] summary::before {
+    content: url('http://shop.testing-schaltkulisse.de/wp-content/uploads/2024/05/minies.svg'); 
+  }
+
+  .before\:content-\[\'\+\'\]::before {
+      --tw-content: url(/images/plus-icon.svg)!important;
+      padding-right: 1rem ;
+      margin-top: 4px;
+  }
+
+  details[open] summary ~ * {
+      animation: slideDown 0.3s ease-in-out;
+  }
+
+  details[open] summary p {
+      opacity: 0;
+      animation-name: showContent;
+      animation-duration: 0.6s;
+      animation-delay: 0.2s;
+      animation-fill-mode: forwards;
+      margin: 0;
+  }
+  .footer-site{
+    background-color: #F9FAFC;
+  }
+  input:focus-visible{
+      outline: none;
+  }
+  .read_only_field{
+      background-color: #f4f2f4;
+  }
+  .slider-div .slick-dots{
+    width: 73%;
+  }
+  .slider-div .controls{
+    width: 75%;
+  }
+  .slider-div .slick-dots li button:before {
+    content: " ";
+    background: #b3b3b3;
+    opacity: 1;
+    height: 2px;
+    width: 30px;
+    margin-top: 2.5rem;
+  }
+  .slider-div .slick-dots li.slick-active button:before{
+    opacity: 0.8;
+    background: #e72e2e;
+  }
+  .controls button svg {
+    color: #b3b3b3;
+    width: 21px;
+    height: 14px;
+}
+  .controls button {
+    background: #d4d4d4;
+    padding: 14px 11px;
+    border-radius: 50%;
+}
+  .controls button:hover svg{
+    color: darkgrey;
+  }
+  .slider-div .slick-list {
+    padding: 0 2px !important;
+  }
+  .slider-div {
+    padding-left: 50px; /* Adjust the left padding as needed */
+  }
+  
+  .slider-img .slider-div .slick-list {
+    margin-right: -50px; /* Offset the padding with negative margin to remove extra spacing on the right */
+  }
+  
+  .slider-img .slick-slide[data-index="0"] {
+    visibility: hidden;
+  }
+  .slick-prev, .slick-next {
+    display: none !important;
+}
+
+@media screen and (max-width: 600px) {
+  .slider-img .slick-slide[data-index="0"] {
+    display: none;
+  }
+  .slider-div {
+    padding-left: 15px;
+}
+.slider-div .slick-dots{
+  display: none !important;
+}
+.slider-div .controls {
+  width: 93%;
+}
+
+}
